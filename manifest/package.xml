@@ -5,6 +5,10 @@
 		<name>ApexClass</name>
 	</types>
 	<types>
+		<members>Tic_Tac_Toe</members>
+		<name>CustomApplication</name>
+	</types>
+	<types>
 		<members>PushTopicCustom__c.ButtonNumber__c</members>
 		<members>PushTopicCustom__c.Finished__c</members>
 		<members>PushTopicCustom__c.Tied__c</members>
