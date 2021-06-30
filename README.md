@@ -1,14 +1,19 @@
 # Salesforce Tic-Tac-Toe
 
 Hi! The Salesforce **Tic-Tac-Toe** is a visual representation of how a **Real Time Integration** can be done btween two different Salesforce orgs utilizing the Push topics as Streaming channel and keep the components in Sync with the Server of another Salesforce org or a third party system.
-<br/><br/>
 
 [![Button](https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png)](https://githubsfdeploy.herokuapp.com/app/githubdeploy/AyuSharma-dev/Salesforce-TicTacToe)
 
+<br/><br/>
+
+[![TicTacToeGif4a449f5c29f04915.gif](https://s6.gifyu.com/images/TicTacToeGif4a449f5c29f04915.gif)]
 <br/>
 # Setup
 
 Deploy the Repository on two different Salesforce Org. I would only recommend to use Trailhead playgrounds or Developer Edition. This Repo is not cofigured for Sandboxes. After Successfully deployment follow the below steps for both the Orgs.
+
+## Assign Permission Set User
+Assign TicTacToe permission set to the Playing user. This permission is created as part of package deployment.
 
 ## Run The Apex Script
 
@@ -43,8 +48,8 @@ This should be the Instance URL not the URL you see in browser in Salesforce Lig
 Now to make both the Org Authorize each Other, You need to create a record for **TicTaxToeSettings__c** custom setting. This Record will contain the information of your Destination Org. As part of the repository deploy a connected App is created in each Org. We require the Client Id and Secret from these connected apps. Below are field values for Record in Org1:
 
 - **Name**: main
-- **Client Id**: Client Id of the Connected App in Org2
-- **Client Secret**: Client Secret of the Connected App in Org2
+- **Client Id**: *3MVG9fe4g9fhX0E7oqbsayReNbc8dZMYcb0oCx5zRNq6KxNSrvdXbknvVPKI2EmKylZO0JnpnZVRTfWPfK8zg*
+- **Client Secret**: *C8D3AD59509A613D2A93342168032EF177694DE7FDEA999C8B239DF933DEDF37*
 - **Username** : Username of the Org2.
 - **Password**: Password of the Org2.
 - **Instance URL**: Instance URL of Org2.
@@ -55,7 +60,7 @@ Leave SId field blank and Repeat the same steps in your Org2 for Org1.
 
 >**Caution**: I don't suggest this type of Authorization in Production Environments or Enterprise development 	   as this expose sensitive information. I would suggest to use either JWT or Oauth2.0 to get the Authorization Done.
 
-## One Last and Small thing Update the CSS File
+## One Last and Small thing Update the CSS and JS File
 
 **In TicTacToe.css marked and markedOpponent class's Background URL should be opposite.**
 For example
@@ -66,6 +71,11 @@ For example
 >Org2: 
 >>**marked** -> Cross
 >>**markedOpponent** -> Circle
+
+In TicTacToe.js file update the line number 11:
+```ruby 
+disableButtons = false; //Change this to true in only one org.
+``` 
 
 Thats it You are ready to Play Game in your Salesforce ORGs.
 ---
