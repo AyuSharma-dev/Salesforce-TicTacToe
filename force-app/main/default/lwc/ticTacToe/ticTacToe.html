@@ -1,0 +1,23 @@
+<template>
+    <div style="background-color: #003458;height: 140%;">
+        <div class="banner">{bannerMsg}</div>
+        <div class="slds-grid slds-wrap" style="margin-bottom: 4px;margin-left: 15%;">
+            <button class="slds-button slds-button_neutral slds-button_stretch one" onclick={handleClick} value='one' data-column=0 data-row=0 disabled={disableButtons}></button>
+            <button class="slds-button slds-button_neutral slds-button_stretch two" onclick={handleClick} value='two' data-column=1 data-row=0 disabled={disableButtons}></button>
+            <button class="slds-button slds-button_neutral slds-button_stretch three" onclick={handleClick} value='three' data-column=2 data-row=0 disabled={disableButtons}></button>
+
+            <button class="slds-button slds-button_brand refreshButton  slds-hide" onclick={restartGame}></button>
+        </div>
+        <div class="slds-grid slds-wrap" style="margin-bottom: 4px;margin-left: 15%;">
+            <button class="slds-button slds-button_neutral slds-button_stretch four" onclick={handleClick} value='four' data-column=0 data-row=1 disabled={disableButtons}></button>
+            <button class="slds-button slds-button_neutral slds-button_stretch five" onclick={handleClick} value='five' data-column=1 data-row=1 disabled={disableButtons}></button>
+            <button class="slds-button slds-button_neutral slds-button_stretch six" onclick={handleClick} value='six' data-column=2 data-row=1 disabled={disableButtons}></button>
+        </div>
+        <div class="slds-grid slds-wrap" style="margin-bottom: 4px;margin-left: 15%;">
+            <button class="slds-button slds-button_neutral slds-button_stretch seven" onclick={handleClick} value='seven' data-column=0 data-row=2 disabled={disableButtons}></button>
+            <button class="slds-button slds-button_neutral slds-button_stretch eight" onclick={handleClick} value='eight' data-column=1 data-row=2 disabled={disableButtons}></button>
+            <button class="slds-button slds-button_neutral slds-button_stretch nine" onclick={handleClick} value='nine' data-column=2 data-row=2 disabled={disableButtons}></button>
+        </div>
+    </div>
+
+</template>

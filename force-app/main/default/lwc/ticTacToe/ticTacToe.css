@@ -1,0 +1,36 @@
+button{
+    height: 200px;
+    width: 200px;
+    border: solid cornflowerblue;
+}
+
+.marked{
+    background: url('https://i.postimg.cc/8ktX8Jmw/circle-Image.png') no-repeat;
+    background-size: 100%;
+}
+
+.markedOpponent{
+    background: url('https://i.postimg.cc/gjXZBTKC/cross-Image.png') no-repeat;
+    background-size: 100%;
+}
+
+.refreshButton{
+    width: 75px;
+    height: 75px;
+    margin-left: 30px;
+    background: url(https://www.freeiconspng.com/uploads/red-restart-icon-5.png) no-repeat;
+    background-size: 100%;
+}
+
+.banner{
+    background-color: #10a8e6;
+    height: 72px;
+    width: 665px;
+    text-align: center;
+    margin-left: 12%;
+    margin-bottom: 45px;
+    margin-top: -15px;
+    font-size: 44px;
+    font-family: cursive;
+    color: white;
+}
