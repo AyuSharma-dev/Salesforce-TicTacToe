@@ -33,6 +33,10 @@
 		<name>CustomTab</name>
 	</types>
 	<types>
+		<members>Tic_Tac_Toe_UtilityBar</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
 		<members>PushTopicCustom__c-Push Topic Custom Layout</members>
 		<name>Layout</name>
 	</types>
