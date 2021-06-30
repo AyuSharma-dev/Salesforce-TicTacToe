@@ -41,7 +41,7 @@
 	</types>
 	<types>
 		<members>SalesforceURL</members>
-		<members>primaryDevOrg</members>
+		<members>TicTacToe</members>
 		<name>RemoteSiteSetting</name>
 	</types>
 	<version>51.0</version>
