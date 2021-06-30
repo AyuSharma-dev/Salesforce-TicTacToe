@@ -5,10 +5,6 @@
 		<name>ApexClass</name>
 	</types>
 	<types>
-		<members>*</members>
-		<name>ConnectedApp</name>
-	</types>
-	<types>
 		<members>PushTopicCustom__c.ButtonNumber__c</members>
 		<members>PushTopicCustom__c.Finished__c</members>
 		<members>PushTopicCustom__c.Tied__c</members>
@@ -28,6 +24,7 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>PushTopicCustom__c</members>
 		<members>Tic_Tac_Toe</members>
 		<name>CustomTab</name>
 	</types>
@@ -38,6 +35,10 @@
 	<types>
 		<members>*</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>TicTacToe</members>
+		<name>PermissionSet</name>
 	</types>
 	<types>
 		<members>SalesforceURL</members>
