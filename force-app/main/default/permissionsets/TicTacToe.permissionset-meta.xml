@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <applicationVisibilities>
-        <application>Tic_Tac_Toe</application>
-        <visible>true</visible>
-    </applicationVisibilities>
     <fieldPermissions>
         <editable>true</editable>
         <field>PushTopicCustom__c.ButtonNumber__c</field>
@@ -32,6 +28,10 @@
     </objectPermissions>
     <tabSettings>
         <tab>PushTopicCustom__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Tic_Tac_Toe</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>

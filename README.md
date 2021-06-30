@@ -48,8 +48,8 @@ This should be the Instance URL not the URL you see in browser in Salesforce Lig
 Now to make both the Org Authorize each Other, You need to create a record for **TicTaxToeSettings__c** custom setting. This Record will contain the information of your Destination Org. As part of the repository deploy a connected App is created in each Org. We require the Client Id and Secret from these connected apps. Below are field values for Record in Org1:
 
 - **Name**: main
-- **Client Id**: *3MVG9fe4g9fhX0E7oqbsayReNbc8dZMYcb0oCx5zRNq6KxNSrvdXbknvVPKI2EmKylZO0JnpnZVRTfWPfK8zg*
-- **Client Secret**: *C8D3AD59509A613D2A93342168032EF177694DE7FDEA999C8B239DF933DEDF37*
+- **Client Id**: *Get Client Id from Connected App of Org2*
+- **Client Secret**: *Get Client Secret from Connected App of Org2*
 - **Username** : Username of the Org2.
 - **Password**: Password of the Org2.
 - **Instance URL**: Instance URL of Org2.
